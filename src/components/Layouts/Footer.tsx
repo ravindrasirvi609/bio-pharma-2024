@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
               <div className="single-footer-widget">
                 <h3>Venue Location</h3>
                 <span>
-                  <i className="icofont-calendar"></i> 23-27 January, 2024
+                  <i className="icofont-calendar"></i> 23-27 Octomber, 2024
                 </span>
 
                 <p className="location">
-                  <i className="icofont-google-map"></i> 241 Yellow Street, San
-                  Francisco, United State
+                  <i className="icofont-google-map"></i> B.J. Road, Bandstand
+                  Promenade, Bandra West, Mumbai, Maharashtra 400050
                 </p>
 
                 <Link href="/contact-us" className="contact-authority">
@@ -84,8 +84,8 @@ const Footer: React.FC = () => {
                     <Image
                       src="/images/logo.png"
                       alt="logo"
-                      width={120}
-                      height={38}
+                      width={180}
+                      height={58}
                     />
                   </Link>
                 </div>
@@ -109,13 +109,13 @@ const Footer: React.FC = () => {
                 </ul>
 
                 <p>
-                  © Evnia is Proudly Owned by{" "}
+                  © This is Proudly Owned by{" "}
                   <a
                     href="https://hibootstrap.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    HiBootstrap
+                    Operant Pharmacy Federation
                   </a>
                 </p>
               </div>

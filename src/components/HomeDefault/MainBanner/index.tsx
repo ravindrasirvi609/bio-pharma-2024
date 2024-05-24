@@ -16,10 +16,10 @@ const MainBanner: React.FC = () => {
         sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
       />
 
-      <div 
+      <div
         className="main-banner"
         style={{
-          backgroundImage: `url(/images/main-bg1.jpg)`
+          backgroundImage: `url(/images/main-bg1.jpg)`,
         }}
       >
         <div className="d-table">
@@ -38,11 +38,11 @@ const MainBanner: React.FC = () => {
 
                 <ul>
                   <li>
-                    <i className="icofont-compass"></i> Yellow Street, United
-                    State
+                    <i className="icofont-compass"></i>
+                    Taj Lands End, Mumbai
                   </li>
                   <li>
-                    <i className="icofont-calendar"></i> 23-27 Jan, 2024
+                    <i className="icofont-calendar"></i> 23-27 Octomber, 2024
                   </li>
                 </ul>
 

@@ -8,7 +8,7 @@ interface CountdownProps {
 
 const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
   const calculateTimeLeft = () => {
-    const endDateTime = new Date("August 23, 2025 17:00:00 PDT").getTime();
+    const endDateTime = new Date("October 23, 2024 17:00:00 PDT").getTime();
     const now = new Date().getTime();
     const timeRemaining = endDateTime - now;
 
