@@ -39,7 +39,7 @@ const MainBanner: React.FC = () => {
                 <ul>
                   <li>
                     <i className="icofont-compass"></i>
-                    Taj Lands End, Mumbai
+                    Mumbai, India
                   </li>
                   <li>
                     <i className="icofont-calendar"></i> 23-27 Octomber, 2024
