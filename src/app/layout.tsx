@@ -1,8 +1,8 @@
 import "../../styles/bootstrap.min.css";
 import "../../styles/icofont.min.css";
 import "../../styles/animate.min.css";
-import 'react-accessible-accordion/dist/fancy-example.css';
-import 'react-tabs/style/react-tabs.css';
+import "react-accessible-accordion/dist/fancy-example.css";
+import "react-tabs/style/react-tabs.css";
 import "swiper/css";
 import "swiper/css/bundle";
 
@@ -21,8 +21,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Evnia - React Next.js Event Conference & Meetup Template",
-  description: "React Next.js Event Conference & Meetup Template",
+  title:
+    "Global Bio Pharma Conference 2024 | Innovations, Networking, Insights",
+  description:
+    "Join the Global Bio Pharma Conference 2024 for cutting-edge innovations, networking opportunities, and industry insights. Connect with top experts and explore the future of biopharmaceuticals",
 };
 
 export default function RootLayout({
