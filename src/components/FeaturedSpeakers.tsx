@@ -7,21 +7,24 @@ const speakers = [
   {
     name: "Dr. Jane Smith",
     role: "CEO, BioTech Innovations",
-    image: "/speakers/jane-smith.jpg",
+    image:
+      "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     linkedin: "https://linkedin.com/in/janesmith",
     twitter: "https://twitter.com/janesmith",
   },
   {
     name: "Prof. John Doe",
     role: "Lead Researcher, Pharma Labs",
-    image: "/speakers/john-doe.jpg",
+    image:
+      "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     linkedin: "https://linkedin.com/in/johndoe",
     twitter: "https://twitter.com/johndoe",
   },
   {
     name: "Dr. Emily Brown",
     role: "Director, Global Health Initiative",
-    image: "/speakers/emily-brown.jpg",
+    image:
+      "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     linkedin: "https://linkedin.com/in/emilybrown",
     twitter: "https://twitter.com/emilybrown",
   },
