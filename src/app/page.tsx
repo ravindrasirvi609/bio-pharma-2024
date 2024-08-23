@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import FeaturedSpeakers from "../components/FeaturedSpeakers";
 import KeyInfo from "../components/KeyInfo";
 import LatestNews from "../components/LatestNews";
+import AboutSection from "@/components/HomeAbout";
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
 
       <main className="flex-grow">
         <Hero />
+        <AboutSection />
         <FeaturedSpeakers />
         <KeyInfo />
         <LatestNews />
