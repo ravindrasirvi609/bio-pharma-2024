@@ -25,7 +25,8 @@ const speakerData: {
   1: {
     name: "Dr. Jane Smith",
     role: "CEO, BioTech Innovations",
-    image: "/speakers/jane-smith.jpg",
+    image:
+      "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     bio: "Dr. Jane Smith is a renowned expert in personalized medicine with over 20 years of experience in the biotech industry. She has led groundbreaking research in genomics and has been instrumental in developing new therapeutic approaches.",
     topic: "The Future of Personalized Medicine",
     presentation: {

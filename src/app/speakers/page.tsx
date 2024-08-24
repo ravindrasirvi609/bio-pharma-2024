@@ -10,7 +10,8 @@ const speakersData = [
     id: 1,
     name: "Dr. Jane Smith",
     role: "CEO, BioTech Innovations",
-    image: "/speakers/jane-smith.jpg",
+    image:
+      "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     bio: "Dr. Jane Smith is a renowned expert in personalized medicine with over 20 years of experience in the biotech industry.",
     topic: "The Future of Personalized Medicine",
     linkedin: "https://www.linkedin.com/in/jane-smith",
@@ -20,7 +21,8 @@ const speakersData = [
     id: 2,
     name: "Prof. John Doe",
     role: "Head of Immunology, Vaccine Research Institute",
-    image: "/speakers/john-doe.jpg",
+    image:
+      "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     bio: "Prof. John Doe is a leading researcher in vaccine development, focusing on novel approaches to combat emerging diseases.",
     topic: "Next-Generation Vaccine Technologies",
     linkedin: "https://www.linkedin.com/in/john-doe",
