@@ -173,7 +173,6 @@ const AboutSection: React.FC = () => {
           </a>
         </div>
       </div>
-      Conference Themes:
     </section>
   );
 };
