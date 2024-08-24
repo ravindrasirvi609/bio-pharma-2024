@@ -34,7 +34,7 @@ const AboutPage: React.FC = () => {
           <div className="absolute inset-0 bg-[#00a28b] opacity-70"></div>
           <div className="relative z-10 text-center px-4">
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-6"
+              className="text-4xl md:text-7xl font-bold mb-6"
               initial="hidden"
               animate="visible"
               variants={fadeIn}
@@ -62,10 +62,10 @@ const AboutPage: React.FC = () => {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0196c2] mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0196c2] mb-8">
               About the Global BioPharma Conference
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               The Global BioPharma Conference is a premier international
               gathering designed to bring together the brightest minds, leading
               innovators, and key decision-makers in the biopharmaceutical
@@ -85,10 +85,10 @@ const AboutPage: React.FC = () => {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#ec4c5b] mb-6">
+            <h3 className="text-3xl md:text-3xl font-semibold text-[#ec4c5b] mb-6">
               Our Mission
             </h3>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               At the core of the Global BioPharma Conference is a mission to
               accelerate the development of life-saving therapies and vaccines.
               By facilitating dialogue between researchers, healthcare
@@ -107,12 +107,12 @@ const AboutPage: React.FC = () => {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#0196c2] mb-8">
+            <h3 className="text-3xl md:text-3xl font-semibold text-[#0196c2] mb-8">
               Why Attend?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="flex items-start bg-white p-6 rounded-lg shadow-md">
-                <FaFlask className="text-4xl text-[#00a28b] mr-4 mt-1" />
+                <FaFlask className="text-3xl text-[#00a28b] mr-4 mt-1" />
                 <div>
                   <h4 className="text-2xl font-semibold mb-3 text-[#ec4c5b]">
                     Engage with Pioneers
@@ -125,7 +125,7 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start bg-white p-6 rounded-lg shadow-md">
-                <FaLightbulb className="text-4xl text-[#1bc8da] mr-4 mt-1" />
+                <FaLightbulb className="text-3xl text-[#1bc8da] mr-4 mt-1" />
                 <div>
                   <h4 className="text-2xl font-semibold mb-3 text-[#ec4c5b]">
                     Explore Innovations
@@ -138,7 +138,7 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start bg-white p-6 rounded-lg shadow-md">
-                <FaUsers className="text-4xl text-[#ec4c5b] mr-4 mt-1" />
+                <FaUsers className="text-3xl text-[#ec4c5b] mr-4 mt-1" />
                 <div>
                   <h4 className="text-2xl font-semibold mb-3 text-[#ec4c5b]">
                     Collaborate for Impact
@@ -151,7 +151,7 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start bg-white p-6 rounded-lg shadow-md">
-                <FaGlobeAmericas className="text-4xl text-[#0196c2] mr-4 mt-1" />
+                <FaGlobeAmericas className="text-3xl text-[#0196c2] mr-4 mt-1" />
                 <div>
                   <h4 className="text-2xl font-semibold mb-3 text-[#ec4c5b]">
                     Stay Informed
@@ -174,10 +174,10 @@ const AboutPage: React.FC = () => {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h3 className="text-3xl md:text-4xl font-semibold text-[#00a28b] mb-6">
+            <h3 className="text-3xl md:text-3xl font-semibold text-[#00a28b] mb-6">
               A Global Platform for Change
             </h3>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
               The Global BioPharma Conference is more than just an event;
               it&apos;s a catalyst for global change. By bringing together
               diverse perspectives and expertise, we strive to create an
@@ -204,7 +204,7 @@ const AboutPage: React.FC = () => {
           >
             <a
               href="#register"
-              className="inline-block bg-[#1bc8da] text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-[#0196c2] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-block bg-[#1bc8da] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-[#0196c2] transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Register for the Conference
             </a>
