@@ -17,6 +17,12 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
       },
+      colors: {
+        teal: "#00a28b",
+        coral: "#ec4c5b",
+        "light-blue": "#1bc8da",
+        "dark-blue": "#0196c0",
+      },
     },
   },
   variants: {

@@ -1,5 +1,15 @@
 import React from "react";
-import { FaGlobe, FaCalendarAlt, FaUsers, FaLightbulb } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaCalendarAlt,
+  FaUsers,
+  FaLightbulb,
+  FaMicroscope,
+  FaRocket,
+  FaPuzzlePiece,
+  FaChartLine,
+  FaHandshake,
+} from "react-icons/fa";
 
 const AboutSection: React.FC = () => {
   const features = [
@@ -25,6 +35,54 @@ const AboutSection: React.FC = () => {
     },
   ];
 
+  const themes = [
+    "Navigating the Biopharma Odyssey: Charting a Course for Innovation",
+    "Biopharma Frontiers: Pioneering Therapies for a Healthier Tomorrow",
+    "The Biopharma Mosaic: Integrating Science, Technology, and Ethics",
+    "Synergy in Science: Collaborative Pathways to Drug Discovery",
+    "Biopharma Kaleidoscope: Shifting Paradigms in Healthcare",
+  ];
+
+  const sessions = [
+    "The Genome Goldrush: Cracking the Code for Next-Gen Therapeutics",
+    "AI and Machine Learning: Revolutionizing Drug Development Pipelines",
+    "Cellular Alchemy: The Future of Regenerative Medicine",
+    "Nanotech in Medicine: Small Particles, Big Impact",
+    "Ethical Boundaries: Balancing Biotech's Promise and Peril",
+  ];
+
+  const topics = [
+    {
+      icon: <FaMicroscope />,
+      title: "Pneumococcal and Pneumococcal Disease Vaccines",
+      description:
+        "Exploring antigen design, AI approaches, adjuvants, and delivery vehicles for vaccine development.",
+    },
+    {
+      icon: <FaRocket />,
+      title: "Cell and Gene Therapy for Rare Diseases",
+      description: "Advancements in CART, CRISPR, and STEM cell technologies.",
+    },
+    {
+      icon: <FaPuzzlePiece />,
+      title: "AI/ML Applications",
+      description:
+        "Leveraging artificial intelligence and machine learning in drug discovery and manufacturing.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Biologics and cGMP Manufacturing",
+      description:
+        "Regulatory compliance, combination products, and novel manufacturing techniques.",
+    },
+    {
+      icon: <FaHandshake />,
+      title: "Business and Technology",
+      description:
+        "East-west synergies, technology transfer, cross-licensing, and funding opportunities.",
+    },
+  ];
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -39,7 +97,7 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -52,7 +110,51 @@ const AboutSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#0196c0] mb-6 text-center">
+            3rd International Conference in Mumbai
+          </h3>
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold mb-4">
+              Different Conference Tracks:
+            </h4>
+            <ul className="list-disc pl-6 mb-8">
+              {themes.map((theme, index) => (
+                <li key={index} className="text-gray-700 mb-2">
+                  {theme}
+                </li>
+              ))}
+            </ul>
+            <h4 className="text-xl font-semibold mb-4">Featured Sessions:</h4>
+            <ul className="list-disc pl-6">
+              {sessions.map((session, index) => (
+                <li key={index} className="text-gray-700 mb-2">
+                  {session}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#0196c0] mb-6 text-center">
+            Key Topics
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {topics.map((topic, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="text-3xl text-[#ec4c5b] mb-4">{topic.icon}</div>
+                <h4 className="text-lg font-semibold mb-2">{topic.title}</h4>
+                <p className="text-gray-600">{topic.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center">
           <h3 className="text-2xl font-bold text-[#0196c0] mb-4">
             Join Us in Shaping the Future of Biopharma
           </h3>
@@ -71,6 +173,7 @@ const AboutSection: React.FC = () => {
           </a>
         </div>
       </div>
+      Conference Themes:
     </section>
   );
 };

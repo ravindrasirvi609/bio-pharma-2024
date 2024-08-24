@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface Event {
   time: string;
@@ -78,9 +79,9 @@ const Schedule: React.FC = () => {
   const [activeDay, setActiveDay] = useState("Day 1");
 
   return (
-    <section className="py-16 bg-gradient-to-r from-purple-50 to-blue-50">
+    <section className="py-16 bg-gradient-to-r from-[#00a28b] to-[#0196c0]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">
           Conference Schedule
         </h2>
 
@@ -91,8 +92,8 @@ const Schedule: React.FC = () => {
               onClick={() => setActiveDay(day)}
               className={`px-6 py-2 mx-2 rounded-full transition-all duration-300 ${
                 activeDay === day
-                  ? "bg-blue-600 text-white shadow-lg"
-                  : "bg-white text-gray-600 hover:bg-gray-100"
+                  ? "bg-[#ec4c5b] text-white shadow-lg"
+                  : "bg-white text-[#00a28b] hover:bg-[#1bc8da] hover:text-white"
               }`}
             >
               {day}
@@ -106,19 +107,15 @@ const Schedule: React.FC = () => {
               key={index}
               className={`flex items-center p-6 ${
                 index % 2 === 0 ? "bg-gray-50" : "bg-white"
-              } transition-all duration-300 hover:bg-blue-50`}
+              } transition-all duration-300 hover:bg-[#1bc8da] hover:text-white`}
             >
               <div className="w-1/6 text-right pr-6">
-                <span className="text-lg font-semibold text-gray-700">
-                  {event.time}
-                </span>
+                <span className="text-lg font-semibold">{event.time}</span>
               </div>
               <div className="w-4/6">
-                <h3 className="text-xl font-bold text-gray-800 mb-1">
-                  {event.title}
-                </h3>
+                <h3 className="text-xl font-bold mb-1">{event.title}</h3>
                 {event.speaker && (
-                  <p className="text-gray-600">
+                  <p>
                     <span className="font-medium">Speaker:</span>{" "}
                     {event.speaker}
                   </p>
@@ -128,10 +125,10 @@ const Schedule: React.FC = () => {
                 <span
                   className={`px-3 py-1 rounded-full text-sm font-medium ${
                     event.type === "talk"
-                      ? "bg-green-100 text-green-800"
+                      ? "bg-[#00a28b] text-white"
                       : event.type === "workshop"
-                      ? "bg-yellow-100 text-yellow-800"
-                      : "bg-gray-100 text-gray-800"
+                      ? "bg-[#ec4c5b] text-white"
+                      : "bg-[#0196c0] text-white"
                   }`}
                 >
                   {event.type.charAt(0).toUpperCase() + event.type.slice(1)}

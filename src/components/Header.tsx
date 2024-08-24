@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           </span>
         </Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          {["Home", "About", "Schedule", "Speakers", "Sponsors"].map((item) => (
+          {["About", "Schedule", "Speakers", "Sponsors"].map((item) => (
             <Link
               key={item}
               href={`/${item.toLowerCase()}`}
