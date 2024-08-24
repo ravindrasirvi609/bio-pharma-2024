@@ -97,10 +97,10 @@ const Schedule: React.FC = () => {
   const [activeDay, setActiveDay] = useState("Day 1");
 
   return (
-    <section className="py-16 min-h-screen bg-gradient-to-r from-[#00a28b] to-[#0196c0]">
+    <section className="py-20 min-h-screen bg-gradient-to-r from-[#00a28b] to-[#0196c0]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4 text-white">
-          3rd International Biopharma Conference
+          3<sup>rd</sup> International Biopharma Conference
         </h2>
         <h3 className="text-2xl font-semibold text-center mb-12 text-white">
           Biopharma Frontiers: Pioneering Therapies for a Healthier Tomorrow
@@ -122,7 +122,7 @@ const Schedule: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden text-black">
           {scheduleData[activeDay].map((event, index) => (
             <motion.div
               key={index}

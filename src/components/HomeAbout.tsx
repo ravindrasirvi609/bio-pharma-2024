@@ -104,7 +104,9 @@ const AboutSection: React.FC = () => {
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="text-4xl text-[#ec4c5b] mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                {feature.title}
+              </h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
@@ -115,7 +117,7 @@ const AboutSection: React.FC = () => {
             3rd International Conference in Mumbai
           </h3>
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-4">
+            <h4 className="text-xl font-semibold mb-4 text-black">
               Different Conference Tracks:
             </h4>
             <ul className="list-disc pl-6 mb-8">
@@ -125,7 +127,9 @@ const AboutSection: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <h4 className="text-xl font-semibold mb-4">Featured Sessions:</h4>
+            <h4 className="text-xl font-semibold mb-4 text-black">
+              Featured Sessions:
+            </h4>
             <ul className="list-disc pl-6">
               {sessions.map((session, index) => (
                 <li key={index} className="text-gray-700 mb-2">
@@ -147,7 +151,9 @@ const AboutSection: React.FC = () => {
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="text-3xl text-[#ec4c5b] mb-4">{topic.icon}</div>
-                <h4 className="text-lg font-semibold mb-2">{topic.title}</h4>
+                <h4 className="text-lg font-semibold mb-2 text-black">
+                  {topic.title}
+                </h4>
                 <p className="text-gray-600">{topic.description}</p>
               </div>
             ))}

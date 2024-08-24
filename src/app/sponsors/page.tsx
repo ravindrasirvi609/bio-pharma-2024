@@ -79,15 +79,15 @@ const faqs = [
 
 const SponsorPage: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-200">
       <header
-        className="relative bg-cover bg-center h-[70vh] flex items-center justify-center"
+        className="relative bg-cover bg-center h-[90vh] flex items-center justify-center"
         style={{
           backgroundImage:
             "url('https://www.shutterstock.com/image-photo/thessaloniki-greece-august-28-2018-600nw-1172289640.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-[#0e3c35] opacity-70"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl font-bold mb-4">Our Sponsors</h1>
           <p className="text-xl max-w-2xl mx-auto">
@@ -98,15 +98,15 @@ const SponsorPage: React.FC = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16 ">
         {/* Sponsor Tiers */}
         <section className="mb-24">
-          <h2 className="text-4xl font-semibold mb-12 text-center">
+          <h2 className="text-4xl font-semibold mb-12 text-center text-teal">
             Our Valued Sponsors
           </h2>
           {Object.entries(sponsorTiers).map(([tier, sponsors]) => (
             <div key={tier} className="mb-16">
-              <h3 className="text-3xl font-semibold mb-8 text-center capitalize">
+              <h3 className="text-3xl font-semibold mb-8 text-center capitalize text-coral">
                 {tier} Sponsors
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -168,18 +168,18 @@ const SponsorPage: React.FC = () => {
 
         {/* Benefits of Sponsorship */}
         <section className="mb-24">
-          <h2 className="text-4xl font-semibold mb-12 text-center">
+          <h2 className="text-4xl font-semibold mb-12 text-center text-teal">
             Why Sponsor?
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-black">
               <h3 className="text-2xl font-semibold mb-4">Brand Visibility</h3>
               <p>
                 Showcase your brand to a targeted audience of industry leaders,
                 researchers, and decision-makers in the biopharma field.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-black">
               <h3 className="text-2xl font-semibold mb-4">
                 Networking Opportunities
               </h3>
@@ -188,7 +188,7 @@ const SponsorPage: React.FC = () => {
                 around the world in a focused, professional setting.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-black">
               <h3 className="text-2xl font-semibold mb-4">
                 Thought Leadership
               </h3>
@@ -197,7 +197,7 @@ const SponsorPage: React.FC = () => {
                 speaking opportunities and exhibition spaces.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-black">
               <h3 className="text-2xl font-semibold mb-4">
                 Access to Innovations
               </h3>
@@ -219,12 +219,15 @@ const SponsorPage: React.FC = () => {
 
         {/* Sponsor Testimonials */}
         <section className="mb-24">
-          <h2 className="text-4xl font-semibold mb-12 text-center">
+          <h2 className="text-4xl font-semibold mb-12 text-center text-teal">
             Sponsor Testimonials
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
+              <div
+                key={index}
+                className="bg-white text-black p-8 rounded-lg shadow-lg"
+              >
                 <div className="flex items-center mb-6">
                   <Image
                     src={testimonial.image}
@@ -276,13 +279,16 @@ const SponsorPage: React.FC = () => {
 
         {/* FAQ Section */}
         <section className="mb-24">
-          <h2 className="text-4xl font-semibold mb-12 text-center">
+          <h2 className="text-4xl font-semibold mb-12 text-center text-teal">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg text-black"
+              >
+                <h3 className="text-xl font-semibold mb-2 ">{faq.question}</h3>
                 <p>{faq.answer}</p>
               </div>
             ))}
@@ -291,7 +297,7 @@ const SponsorPage: React.FC = () => {
 
         {/* Past Sponsors */}
         <section>
-          <h2 className="text-4xl font-semibold mb-12 text-center">
+          <h2 className="text-4xl font-semibold mb-12 text-center text-teal">
             Past Sponsors
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
