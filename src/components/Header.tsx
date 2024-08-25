@@ -39,10 +39,10 @@ const Header: React.FC = () => {
           </span>
         </Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          {["About", "Schedule", "Speakers", "Sponsors"].map((item) => (
+          {["Home", "About", "Schedule", "Speakers", "Sponsors"].map((item) => (
             <Link
               key={item}
-              href={`/${item.toLowerCase()}`}
+              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
               className={`text-sm font-medium hover:text-[#ec4c5b] transition-colors ${
                 isScrolled ? "text-gray-600" : "text-white"
               }`}
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
           {["Home", "About", "Schedule", "Speakers", "Sponsors"].map((item) => (
             <Link
               key={item}
-              href={`/${item.toLowerCase()}`}
+              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
               className="block text-gray-600 hover:text-[#ec4c5b] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

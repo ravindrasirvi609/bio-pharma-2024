@@ -1,149 +1,166 @@
 "use client";
 import React, { useState } from "react";
+import Head from "next/head";
+import { motion } from "framer-motion";
+import {
+  FaRegCalendarAlt,
+  FaRegUser,
+  FaRegEnvelope,
+  FaRegCreditCard,
+} from "react-icons/fa";
 
-const Register: React.FC = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    organization: "",
-    ticketType: "standard",
-  });
+const TicketOption = ({
+  title,
+  price,
+  benefits,
+}: {
+  title: string;
+  price: string;
+  benefits: string[];
+}) => (
+  <motion.div
+    className="bg-white bg-opacity-80 backdrop-blur-md rounded-xl shadow-lg p-6 mb-4 transform hover:scale-105 transition-all duration-300"
+    whileHover={{ y: -5 }}
+  >
+    <h3 className="text-2xl font-bold text-[#00a28b] mb-2">{title}</h3>
+    <p className="text-3xl font-bold mb-4 text-[#ec4c5b]">{price}</p>
+    <ul className="space-y-2">
+      {benefits.map((benefit, index) => (
+        <li key={index} className="text-gray-700 flex items-center">
+          <FaRegCalendarAlt className="mr-2 text-[#1bc8da]" />
+          {benefit}
+        </li>
+      ))}
+    </ul>
+    <motion.button
+      className="mt-6 bg-[#0196c2] text-white font-bold py-3 px-6 rounded-full hover:bg-[#1bc8da] transition-colors w-full"
+      whileTap={{ scale: 0.95 }}
+    >
+      Select
+    </motion.button>
+  </motion.div>
+);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-  };
-
+const RegistrationPage: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-4xl font-bold text-center mb-8 text-[#00a28b]">
-          Register for BioConf
-        </h2>
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white shadow-md rounded-lg p-8"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label
-                htmlFor="firstName"
-                className="block text-gray-700 font-medium mb-2"
-              >
-                First Name
-              </label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00a28b]"
+    <div className="min-h-screen bg-gradient-to-br from-[#00a28b] to-[#1bc8da] py-20">
+      <Head>
+        <title>Register - Global Bio Pharma Conference</title>
+        <meta
+          name="description"
+          content="Register for the Global Bio Pharma Conference"
+        />
+      </Head>
+
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/conference-bg.jpg')" }}
+      ></div>
+
+      <div className="relative z-10">
+        <main className="container mx-auto px-4 py-12">
+          <motion.h1
+            className="text-5xl font-bold text-center text-white mb-8 drop-shadow-lg"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Register for Global Bio Pharma Conference
+          </motion.h1>
+
+          <motion.div
+            className="mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <h2 className="text-3xl font-semibold mb-6 text-white text-center">
+              Select Your Ticket
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <TicketOption
+                title="Early Bird"
+                price="$499"
+                benefits={[
+                  "Access to all sessions",
+                  "Conference materials",
+                  "Networking events",
+                  "Lunch and refreshments",
+                ]}
+              />
+              <TicketOption
+                title="Regular"
+                price="$699"
+                benefits={[
+                  "Access to all sessions",
+                  "Conference materials",
+                  "Networking events",
+                  "Lunch and refreshments",
+                  "Exclusive workshop access",
+                ]}
+              />
+              <TicketOption
+                title="VIP"
+                price="$999"
+                benefits={[
+                  "Priority seating",
+                  "Exclusive VIP reception",
+                  "1-on-1 meeting with keynote speakers",
+                  "All Regular ticket benefits",
+                ]}
               />
             </div>
-            <div>
+          </motion.div>
+
+          <motion.form
+            className="bg-white bg-opacity-80 backdrop-blur-md shadow-lg rounded-xl px-8 pt-8 pb-8 mb-4 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className="mb-6">
               <label
-                htmlFor="lastName"
-                className="block text-gray-700 font-medium mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="name"
               >
-                Last Name
+                <FaRegUser className="inline mr-2" /> Full Name
               </label>
               <input
+                className="shadow appearance-none border rounded-full w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#00a28b] transition-all duration-300"
+                id="name"
                 type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00a28b]"
+                placeholder="John Doe"
               />
             </div>
-          </div>
-          <div className="mt-6">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00a28b]"
-            />
-          </div>
-          <div className="mt-6">
-            <label
-              htmlFor="organization"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Organization
-            </label>
-            <input
-              type="text"
-              id="organization"
-              name="organization"
-              value={formData.organization}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00a28b]"
-            />
-          </div>
-          <div className="mt-6">
-            <label
-              htmlFor="ticketType"
-              className="block text-gray-700 font-medium mb-2"
-            >
-              Ticket Type
-            </label>
-            <select
-              id="ticketType"
-              name="ticketType"
-              value={formData.ticketType}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00a28b]"
-            >
-              <option value="standard">Standard Ticket</option>
-              <option value="vip">VIP Ticket</option>
-              <option value="student">Student Ticket</option>
-            </select>
-          </div>
-          <div className="mt-8">
-            <button
-              type="submit"
-              className="w-full bg-[#ec4c5b] text-white py-3 px-6 rounded-md hover:bg-[#d43c4b] transition-colors duration-300 font-medium"
-            >
-              Register Now
-            </button>
-          </div>
-        </form>
-        <p className="text-center mt-6 text-gray-600">
-          By registering, you agree to our{" "}
-          <a href="#" className="text-[#00a28b] hover:underline">
-            Terms of Service
-          </a>{" "}
-          and{" "}
-          <a href="#" className="text-[#00a28b] hover:underline">
-            Privacy Policy
-          </a>
-          .
-        </p>
+            <div className="mb-6">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                <FaRegEnvelope className="inline mr-2" /> Email
+              </label>
+              <input
+                className="shadow appearance-none border rounded-full w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#00a28b] transition-all duration-300"
+                id="email"
+                type="email"
+                placeholder="johndoe@example.com"
+              />
+            </div>
+            <div className="flex items-center justify-between">
+              <motion.button
+                className="bg-[#ec4c5b] hover:bg-[#1bc8da] text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition-all duration-300"
+                type="button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Next Step <FaRegCreditCard className="inline ml-2" />
+              </motion.button>
+            </div>
+          </motion.form>
+        </main>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Register;
+export default RegistrationPage;

@@ -113,30 +113,42 @@ const AboutSection: React.FC = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-[#0196c0] mb-6 text-center">
-            3rd International Conference in Mumbai
+          <h3 className="text-3xl font-bold text-[#0196c0] mb-8 text-center">
+            3<sup>rd</sup> International Conference in Mumbai
           </h3>
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-4 text-black">
-              Different Conference Tracks:
-            </h4>
-            <ul className="list-disc pl-6 mb-8">
-              {themes.map((theme, index) => (
-                <li key={index} className="text-gray-700 mb-2">
-                  {theme}
-                </li>
-              ))}
-            </ul>
-            <h4 className="text-xl font-semibold mb-4 text-black">
-              Featured Sessions:
-            </h4>
-            <ul className="list-disc pl-6">
-              {sessions.map((session, index) => (
-                <li key={index} className="text-gray-700 mb-2">
-                  {session}
-                </li>
-              ))}
-            </ul>
+          <div className="bg-white p-10 rounded-lg shadow-lg">
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="md:w-1/2 md:pr-4">
+                <h4 className="text-2xl font-semibold mb-6 text-black">
+                  Different Conference Tracks:
+                </h4>
+                <ul className="list-disc pl-8 mb-10">
+                  {themes.map((theme, index) => (
+                    <li
+                      key={index}
+                      className="text-gray-800 mb-3 hover:text-[#0196c0] transition-colors duration-200"
+                    >
+                      {theme}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="md:w-1/2 md:pl-4">
+                <h4 className="text-2xl font-semibold mb-6 text-black">
+                  Featured Sessions:
+                </h4>
+                <ul className="list-disc pl-8">
+                  {sessions.map((session, index) => (
+                    <li
+                      key={index}
+                      className="text-gray-800 mb-3 hover:text-[#0196c0] transition-colors duration-200"
+                    >
+                      {session}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
