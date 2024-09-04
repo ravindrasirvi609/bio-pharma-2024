@@ -83,6 +83,25 @@ const AboutSection: React.FC = () => {
     },
   ];
 
+  const panelDiscussion = {
+    title:
+      "Innovative Strategies for Optimizing CGT Manufacturing and Distribution: Leveraging Cutting-Edge Technologies and Platforms",
+    discussionPoints: [
+      "Current Challenges in CGT Manufacturing and Distribution: Identifying key bottlenecks in the current CGT supply chain. Discussing the impact of these challenges on scalability and affordability.",
+      "Technological Innovations in CGT Manufacturing: Exploring new technologies that are revolutionizing CGT production. Case studies of successful implementation of advanced manufacturing technologies.",
+      "Optimizing Distribution and Logistics: Strategies for ensuring the integrity and efficiency of CGT distribution. The role of temperature-controlled storage and transport in maintaining product quality.",
+      "Platforms for Streamlining CGT Processes: Evaluating different platforms that support CGT manufacturing and logistics. Benefits and drawbacks of using contract development and manufacturing organizations (CDMOs) versus in-house production.",
+      "Regulatory Considerations and Compliance: Navigating the regulatory landscape for CGT products. Best practices for ensuring compliance while optimizing processes.",
+      "Future Trends and Predictions: Anticipating future advancements in CGT manufacturing and logistics. How emerging technologies might shape the future of CGT supply chains.",
+    ],
+    potentialPanelists: [
+      "Industry Experts: Leaders from biotech companies specializing in CGT.",
+      "Regulatory Authorities: Representatives from regulatory bodies to provide insights on compliance.",
+      "Technology Innovators: Experts in new technologies and platforms for CGT.",
+      "Supply Chain Specialists: Professionals with experience in optimizing logistics for sensitive products.",
+    ],
+  };
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -172,23 +191,35 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-[#0196c0] mb-4">
-            Join Us in Shaping the Future of Biopharma
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-[#0196c0] mb-6 text-center">
+            Dedicated Panel Discussion
           </h3>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            The Global Bio Pharma Conference Group is committed to fostering
-            innovation, collaboration, and knowledge exchange in the biopharma
-            industry. Our annual conference brings together researchers,
-            industry professionals, and thought leaders to address the most
-            pressing challenges and exciting opportunities in healthcare.
-          </p>
-          <a
-            href="/about"
-            className="inline-block bg-[#1bc8da] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#0196c0] transition duration-300"
-          >
-            Learn More About Us
-          </a>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h4 className="text-xl font-semibold mb-4 text-black">
+              {panelDiscussion.title}
+            </h4>
+            <h5 className="text-lg font-semibold mb-4 text-black">
+              Discussion Points:
+            </h5>
+            <ul className="list-disc pl-8 mb-6">
+              {panelDiscussion.discussionPoints.map((point, index) => (
+                <li key={index} className="text-gray-800 mb-3">
+                  {point}
+                </li>
+              ))}
+            </ul>
+            <h5 className="text-lg font-semibold mb-4 text-black">
+              Potential Panelists:
+            </h5>
+            <ul className="list-disc pl-8">
+              {panelDiscussion.potentialPanelists.map((panelist, index) => (
+                <li key={index} className="text-gray-800 mb-3">
+                  {panelist}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
