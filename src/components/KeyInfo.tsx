@@ -11,8 +11,8 @@ const KeyInfo: React.FC = () => {
     },
     {
       icon: <FaHandshake />,
-      number: "3",
-      text: "Days of Networking",
+      number: "2",
+      text: "Days of Interactive Sessions",
       color: "#ec4c5b",
     },
     {
@@ -27,7 +27,7 @@ const KeyInfo: React.FC = () => {
     <section className="py-20 bg-gradient-to-b from-white to-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
-          Conference Highlights
+          Webinar Highlights
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {highlights.map((item, index) => (

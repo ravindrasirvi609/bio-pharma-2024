@@ -10,97 +10,68 @@ interface Event {
 }
 
 const scheduleData: { [key: string]: Event[] } = {
-  "Day 1": [
+  "Thursday, December 4th": [
     {
-      time: "09:00 AM",
-      title: "Opening Keynote: Navigating the Biopharma Odyssey",
-      speaker: "Dr. Jane Smith, Chief Scientific Officer",
+      time: "18:00",
+      title: "Welcome Address",
+      speaker: "Dr. Kumar",
       type: "keynote",
     },
-    { time: "10:30 AM", title: "Networking Break", speaker: "", type: "break" },
     {
-      time: "11:00 AM",
-      title: "Pneumococcal Vaccines: Cost-Effective Manufacturing",
-      speaker: "Prof. John Doe, Vaccine Research Institute",
+      time: "18:15",
+      title: "Keynote Session",
+      speaker: "Speaker 1",
+      type: "keynote",
+    },
+    {
+      time: "19:30",
+      title: "Session 2",
+      speaker: "",
       type: "panel",
     },
     {
-      time: "02:00 PM",
-      title: "AI Approaches in Antigen Design",
-      speaker: "Dr. Emily Brown, AI in Biopharma Ltd.",
-      type: "workshop",
-    },
-    {
-      time: "04:00 PM",
-      title: "Cell and Gene Therapy for Rare Diseases",
-      speaker: "Dr. Michael Johnson, Gene Therapy Center",
+      time: "20:15",
+      title: "Q & A",
+      speaker: "",
       type: "panel",
     },
   ],
-  "Day 2": [
+  "Friday, December 5th": [
     {
-      time: "09:30 AM",
-      title: "AI/ML Applications in Drug Discovery",
-      speaker: "Dr. Alex Turner, PharmaTech Solutions",
+      time: "18:00",
+      title: "Welcome Address",
+      speaker: "Dr. Kumar",
       type: "keynote",
     },
-    { time: "11:00 AM", title: "Coffee Break", speaker: "", type: "break" },
     {
-      time: "11:30 AM",
-      title: "Biologics Combination Products: Regulatory Challenges",
-      speaker: "Sarah Lee, Regulatory Affairs Expert",
-      type: "panel",
-    },
-    {
-      time: "02:00 PM",
-      title: "cGMP Manufacturing for Biologics",
-      speaker: "Dr. Chris Wilson, BioManufacturing Inc.",
-      type: "workshop",
-    },
-    {
-      time: "04:00 PM",
-      title: "CDMO Capacity Optimization Strategies",
-      speaker: "Emma Davis, CDMO Alliance",
-      type: "panel",
-    },
-  ],
-  "Day 3": [
-    {
-      time: "10:00 AM",
-      title: "East-West Business Synergies in Biopharma",
-      speaker: "Robert Chang, Global Biopharma Ventures",
+      time: "18:15",
+      title: "Keynote Session",
+      speaker: "Speaker 1",
       type: "keynote",
     },
-    { time: "11:30 AM", title: "Lunch Break", speaker: "", type: "break" },
     {
-      time: "01:00 PM",
-      title: "Technology Transfer and Cross-Licensing",
-      speaker: "Dr. Lisa Patel, BioTech Licensing Association",
+      time: "19:30",
+      title: "Session 2",
+      speaker: "",
       type: "panel",
     },
     {
-      time: "03:00 PM",
-      title: "Funding Opportunities in Biopharma",
-      speaker: "Mark Anderson, Biopharma Investors Network",
+      time: "20:15",
+      title: "Q & A",
+      speaker: "",
       type: "panel",
-    },
-    {
-      time: "04:30 PM",
-      title: "Closing Remarks: The Future of Biopharma",
-      speaker: "Conference Chair",
-      type: "keynote",
     },
   ],
 };
 
 const Schedule: React.FC = () => {
-  const [activeDay, setActiveDay] = useState("Day 1");
+  const [activeDay, setActiveDay] = useState("Thursday, December 4th");
 
   return (
     <section className="py-20 min-h-screen bg-gradient-to-r from-[#00a28b] to-[#0196c0]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4 text-white">
-          3<sup>rd</sup> International Biopharma Conference
+          International Biopharma Webinar
         </h2>
         <h3 className="text-2xl font-semibold text-center mb-12 text-white">
           Biopharma Frontiers: Pioneering Therapies for a Healthier Tomorrow

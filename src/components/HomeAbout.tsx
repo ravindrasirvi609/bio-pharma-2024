@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
     {
       icon: <FaCalendarAlt />,
       title: "Annual Event",
-      description: "Join our yearly flagship conference",
+      description: "Join our yearly flagship webinar",
     },
     {
       icon: <FaUsers />,
@@ -107,7 +107,7 @@ const AboutSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#00a28b] mb-4">
-            About Global Bio Pharma Conference
+            About Global Bio Pharma Webinar
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Bringing together the brightest minds in biopharma to shape the
@@ -133,13 +133,13 @@ const AboutSection: React.FC = () => {
 
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-[#0196c0] mb-8 text-center">
-            3<sup>rd</sup> International Conference in Mumbai
+            International Webinar in Mumbai
           </h3>
           <div className="bg-white p-10 rounded-lg shadow-lg">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="md:w-1/2 md:pr-4">
                 <h4 className="text-2xl font-semibold mb-6 text-black">
-                  Different Conference Tracks:
+                  Different Webinar Tracks:
                 </h4>
                 <ul className="list-disc pl-8 mb-10">
                   {themes.map((theme, index) => (

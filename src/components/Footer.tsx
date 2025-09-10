@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">
               Contact Us
             </h3>
-            <p className="mb-2">Email: info@gbpconference.com</p>
+            <p className="mb-2">Email: info@gbpwebinar.com</p>
             <p>Phone: +1 (555) 123-4567</p>
           </div>
           <div>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">
               Newsletter
             </h3>
-            <p className="mb-4">Stay updated with the latest conference news</p>
+            <p className="mb-4">Stay updated with the latest webinar news</p>
             <form className="flex flex-col sm:flex-row">
               <input
                 type="email"
@@ -78,8 +78,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p>
-            &copy; {currentYear} Global Bio Pharma Conference. All rights
-            reserved.
+            &copy; {currentYear} Global Bio Pharma Webinar. All rights reserved.
           </p>
         </div>
       </div>

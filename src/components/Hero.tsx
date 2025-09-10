@@ -57,14 +57,14 @@ const Hero: React.FC = () => {
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in-down">
-            3<sup>rd</sup> International Biopharma Conference
+            International Biopharma Webinar
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl mb-6 animate-fade-in-down animation-delay-200">
             &quot;Navigating the Biopharma Odyssey: Charting a Course for
             Innovation&quot;{" "}
           </p>
           <p className="text-lg sm:text-xl mb-8 animate-fade-in-down animation-delay-400">
-            Febuary, 2025 • Mumbai
+            December 4-5, 2025 • Virtual Event
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-up animation-delay-600">
             <Link

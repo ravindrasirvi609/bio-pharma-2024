@@ -45,10 +45,10 @@ const RegistrationPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#00a28b] to-[#1bc8da] py-20">
       <Head>
-        <title>Register - Global Bio Pharma Conference</title>
+        <title>Register - Global Bio Pharma Webinar</title>
         <meta
           name="description"
-          content="Register for the Global Bio Pharma Conference"
+          content="Register for the Global Bio Pharma Webinar"
         />
       </Head>
 
@@ -65,7 +65,7 @@ const RegistrationPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Register for Global Bio Pharma Conference
+            Register for Global Bio Pharma Webinar
           </motion.h1>
 
           <motion.div
@@ -83,9 +83,9 @@ const RegistrationPage: React.FC = () => {
                 price="$499"
                 benefits={[
                   "Access to all sessions",
-                  "Conference materials",
+                  "Webinar materials",
                   "Networking events",
-                  "Lunch and refreshments",
+                  "Digital resources",
                 ]}
               />
               <TicketOption
@@ -93,9 +93,9 @@ const RegistrationPage: React.FC = () => {
                 price="$699"
                 benefits={[
                   "Access to all sessions",
-                  "Conference materials",
+                  "Webinar materials",
                   "Networking events",
-                  "Lunch and refreshments",
+                  "Digital resources",
                   "Exclusive workshop access",
                 ]}
               />

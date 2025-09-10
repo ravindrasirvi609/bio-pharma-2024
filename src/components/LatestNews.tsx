@@ -5,20 +5,20 @@ import { FaCalendarAlt, FaArrowRight } from "react-icons/fa";
 
 const news = [
   {
-    title: "Breakthrough in Gene Therapy to be Unveiled at GBP Conference",
-    date: "May 15, 2024",
+    title: "Breakthrough in Gene Therapy to be Unveiled at GBP Webinar",
+    date: "December 1, 2025",
     excerpt:
-      "A groundbreaking development in gene therapy will be presented at this year's conference, promising new hope for genetic disorders.",
+      "A groundbreaking development in gene therapy will be presented at this year's webinar, promising new hope for genetic disorders.",
   },
   {
     title: "Leading Pharma Companies to Showcase New Drug Developments",
-    date: "May 10, 2024",
+    date: "November 25, 2025",
     excerpt:
       "Top pharmaceutical firms will reveal their latest drug innovations, covering areas from cancer treatment to rare diseases.",
   },
   {
     title: "Panel Discussion: The Future of Personalized Medicine",
-    date: "May 5, 2024",
+    date: "November 20, 2025",
     excerpt:
       "Industry experts will debate the potential and challenges of personalized medicine in an engaging panel discussion.",
   },

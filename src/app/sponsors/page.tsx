@@ -47,21 +47,21 @@ const testimonials = [
     name: "Dr. Sarah Chen",
     company: "BioTech Innovations",
     quote:
-      "Sponsoring the Global Bio Pharma Conference has been instrumental in expanding our network and showcasing our latest advancements in gene therapy.",
+      "Sponsoring the Global Bio Pharma Webinar has been instrumental in expanding our network and showcasing our latest advancements in gene therapy.",
     image: "/operant.png",
   },
   {
     name: "Michael Rodriguez",
     company: "PharmaGlobal",
     quote:
-      "The exposure and connections we've gained through our platinum sponsorship have been invaluable. This conference is a must for anyone in the biopharma industry.",
+      "The exposure and connections we've gained through our platinum sponsorship have been invaluable. This webinar is a must for anyone in the biopharma industry.",
     image: "/operant.png",
   },
 ];
 
 const faqs = [
   {
-    question: "What are the benefits of sponsoring the conference?",
+    question: "What are the benefits of sponsoring the webinar?",
     answer:
       "Sponsors gain visibility among industry leaders, access to cutting-edge research, networking opportunities, and the chance to showcase their innovations to a targeted audience.",
   },
@@ -93,7 +93,7 @@ const SponsorPage: React.FC = () => {
           <p className="text-xl max-w-2xl mx-auto">
             We are grateful for the support of our esteemed sponsors who play a
             crucial role in advancing the field of Bio-Pharma and making this
-            conference possible.
+            webinar possible.
           </p>
         </div>
       </header>
@@ -152,9 +152,9 @@ const SponsorPage: React.FC = () => {
               <p className="mb-6 text-lg">
                 BioTech Innovations is at the forefront of gene therapy
                 research, developing groundbreaking treatments for rare genetic
-                disorders. Their continued support of our conference
-                demonstrates their commitment to fostering collaboration and
-                advancement in the biopharma industry.
+                disorders. Their continued support of our webinar demonstrates
+                their commitment to fostering collaboration and advancement in
+                the biopharma industry.
               </p>
               <Link
                 href="https://biotechinnovations.com"

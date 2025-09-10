@@ -7,9 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Global Bio Pharma Conference 2024",
+  title: "Global Bio Pharma Webinar 2025",
   description:
-    "Join the leading Bio Pharma Conference of 2024. Network with industry experts, discover breakthrough research, and shape the future of healthcare.",
+    "Join the leading Bio Pharma Webinar of 2025. Network with industry experts, discover breakthrough research, and shape the future of healthcare.",
 };
 
 export default function RootLayout({
